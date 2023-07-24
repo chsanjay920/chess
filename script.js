@@ -1,35 +1,16 @@
 var chess = [];
 
-var c = [
-    [{},{},{},{},{},{},{},{}],
-    [{},{},{},{},{},{},{},{}],
-    [{},{},{},{},{},{},{},{}],
-    [{},{},{},{},{},{},{},{}],
-    [{},{},{},{},{},{},{},{}],
-    [{},{},{},{},{},{},{},{}],
-    [{},{},{},{},{},{},{},{}],
-    [{},{},{},{},{},{},{},{}],
-]
-
 
 function initiateChessBoard() {
     var chessboarddiv = document.getElementById("chessboard");
     for (var i = 0; i < 8; i++) {
-        let row = [];
         for (var j = 0; j < 8; j++) {
             var cell = document.createElement("div");
             cell.id = `${i}${j}`;
             cell.className = "cell";
             chessboarddiv.appendChild(cell);
-            row.push({
-                piece:"",
-                X:i,
-                Y:j
-            });
         }
-        chess.push(row);
     }
-    console.log(chess)
 }
 
 function initiateChess(name, ix, iy, cx, cy, color, row, piece) {
@@ -85,4 +66,4 @@ function arrangeCoins() {
 
 
 initiateChessBoard();
-// arrangeCoins();
+arrangeCoins();
