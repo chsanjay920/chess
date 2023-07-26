@@ -106,3 +106,11 @@ body{
     background-image: url("./images/horseblack.png");
     background-size: cover;
 }
+.marker{
+    
+    background-image:
+    url("./images/circle.png");
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
